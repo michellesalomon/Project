@@ -15,3 +15,15 @@
 .logo {
   width: 100px;
 }
+body {
+  background-color: #fec7d7;
+}
+p {
+  color: #0e172c;
+}
+footer {
+  background-color: #d9d4e7;
+}
+header{
+  background-color: #d9d4e7;
+}
