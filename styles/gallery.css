@@ -12,9 +12,6 @@
   vertical-align: middle;
   width: 500px;
 }
-.logo {
-  width: 100px;
-}
 body {
   background-color: #fec7d7;
 }
@@ -24,6 +21,6 @@ p {
 footer {
   background-color: #d9d4e7;
 }
-header{
+header {
   background-color: #d9d4e7;
 }

@@ -1,0 +1,55 @@
+form {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans";
+  text-align: center;
+  margin-bottom: 100px;
+}
+h1 {
+  text-align: center;
+}
+#let {
+  text-align: center;
+}
+button {
+  font-family: "Open Sans";
+  border: none;
+  background-color: #0e172c;
+  color: #fffffe;
+  cursor: pointer;
+  padding: 16px 32px;
+  margin: 4px 2px;
+}
+button:hover {
+  background-color: #a786df;
+}
+input[type="text"] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="text"]:focus {
+  background-color: #a786df;
+}
+input[type="email"]:focus {
+  background-color: #a786df;
+}
+fieldset {
+  background-color: #fffffe;
+  border-radius: 5px;
+}
+legend {
+  background-color: #a786df;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid  #0e172c 0.5px;
+}
