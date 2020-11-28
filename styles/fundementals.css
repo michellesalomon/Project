@@ -63,6 +63,9 @@ footer {
 footer a{
     font-size: 21px;
 }
+footer img{
+    width:80px;
+}
 a {
   font-family: "Open Sans";
   text-decoration: none;
