@@ -69,7 +69,7 @@
     </header>
     <h1>Contact Michy</h1>
     <p id="let">Let me know what you think or if you have any questions :))</p>
-    <form id="form" action="" method="POST">
+    <form id="form" action="mailto:michsalomon17@gmail.com" method="POST">
       <fieldset>
         <legend>Your Information:</legend>
         <div>
@@ -141,12 +141,14 @@
 
     <script>
       function validate() {
-        console.log("works")
-        // const x = document.getElementById("form").value;
-        // if (x == "") {
-        //   alert("Fill our your name pls!");
-        //   return false;
-        // }
+        console.log("works");
+        const myForm = document.querySelector("form");
+        if (myForm["name"].value.length == 0) {
+          alert("Fill our your name pls!");
+        }
+        if (myForm["email"].value.length == 0) {
+          alert("Check your email address again!");
+        }
       }
       document.getElementById("sbm").onclick = validate;
     </script>
