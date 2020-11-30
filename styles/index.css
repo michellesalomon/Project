@@ -91,6 +91,7 @@ h1 {
   margin-right: auto;
   font-size: 50px;
   margin-bottom: 15px;
+  color: #f9f8fc;
 }
 p {
   text-align: center;
@@ -98,4 +99,12 @@ p {
   margin-right: 100px;
   font-size: 24px;
   margin-top: 10px;
+  color: #d9d4e7;
+}
+#white {
+  background-color: #a786df;
+  width: 100%;
+}
+#color{
+ color:#0e172c;
 }
