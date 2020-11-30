@@ -69,7 +69,7 @@
     </header>
     <h1>Contact Michy</h1>
     <p id="let">Let me know what you think or if you have any questions :))</p>
-    <form action="mailto:michsalomon17@gmail.com" method="post">
+    <form id="form" action="" method="POST">
       <fieldset>
         <legend>Your Information:</legend>
         <div>
@@ -118,7 +118,7 @@
           ></textarea>
         </div>
         <div>
-          <button type="submit" name="submit-button">Submit</button>
+          <button id="sbm" type="submit" name="submit-button">Submit</button>
           <button type="reset" name="reset-button">Reset</button>
         </div>
       </fieldset>
@@ -138,5 +138,17 @@
           width="100"
       /></a>
     </footer>
+
+    <script>
+      function validate() {
+        console.log("works")
+        // const x = document.getElementById("form").value;
+        // if (x == "") {
+        //   alert("Fill our your name pls!");
+        //   return false;
+        // }
+      }
+      document.getElementById("sbm").onclick = validate;
+    </script>
   </body>
 </html>
