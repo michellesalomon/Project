@@ -68,7 +68,13 @@
         </ul>
       </div>
     </header>
-    <!-- welcome message -->
+    <div>
+      <h1>Well, Hello There</h1>
+      <p>
+        I'm Michy. Take a look at how I see life from an alternate perspective.
+        What would you like to explore today?
+      </p>
+    </div>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1/4</div>
@@ -151,33 +157,36 @@
     </footer>
 
     <script>
-      let slideIndex=1;
+      let slideIndex = 1;
       showSlides(slideIndex);
 
-      function plusSlides(n){
-        showSlides(slideIndex +=n);
-        console.log("works")
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+        console.log("works");
       }
-      document.getElementsByClassName("next").onclick=plusSlides
-
+      document.getElementsByClassName("next").onclick = plusSlides;
 
       function currentSlide(n) {
-      showSlides(slideIndex = n);
+        showSlides((slideIndex = n));
       }
       function showSlides(n) {
-        const i;
+        let i;
         const slides = document.getElementsByClassName("mySlides");
         const dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
         for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+          dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
       }
     </script>
   </body>
