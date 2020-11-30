@@ -93,6 +93,7 @@
     alt="Michy with cute sunglasses"
     title="Picture of Michy"
     width="250"
+    id="michy"
     /></a>
     </div>
     <h2>Experience</h2>
@@ -145,5 +146,23 @@
           width="100"
       /></a>
     </footer>
+    <script>
+      function larger(){
+        let x = document.getElementById("michy");
+        let w = x.width;
+        w = w * 1.5;
+        x.width = w;
+      }
+
+      document.getElementById("michy").onmouseover = larger;
+      
+      function reduce() {
+        let x = document.getElementById("michy");
+        let w = x.width;
+        w = w / 1.5;
+        x.width = w;
+      }
+      document.getElementById("michy").onmouseout = reduce;
+    </script>
   </body>
 </html

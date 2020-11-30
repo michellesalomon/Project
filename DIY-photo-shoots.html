@@ -60,6 +60,7 @@
       }
       .logo{
         margin:0;
+        border: none;
       }
       .white{
         border:solid #fffffe 2px;
@@ -210,5 +211,18 @@
       /></a>
     </div>
     </footer>
+    <script>
+      function change(){
+        let header=document.querySelector("h1")
+        header.innerHTML="You Can Accomplish Anything"
+      }
+      document.querySelector("h1").onmouseover=change
+
+      function changeBack(){
+        let header=document.querySelector("h1")
+        header.innerHTML="DIY Photo Shoots"
+      }
+      document.querySelector("h1").onmouseout=changeBack
+    </script>
   </body>
 </html>
